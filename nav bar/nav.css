@@ -1,0 +1,17 @@
+body{
+    background-image: url("DEEPAK ANKAD.jpg");
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    backdrop-filter: blur(33px);
+    border: 2px solid rgba(255,255,255,0.18);
+    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+    display: flex;
+    width: 80%;
+    height: 60px;
+    justify-content: space-evenly;
+}

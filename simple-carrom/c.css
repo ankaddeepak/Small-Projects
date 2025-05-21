@@ -1,0 +1,115 @@
+/* styles.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2e6d9;
+    font-family: Arial, sans-serif;
+  }
+  
+  #carrom-board {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #d7a77d;
+    border: 10px solid #8b5a2b;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pocket {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  #pocket1 {
+    top: -10px;
+    left: -10px;
+  }
+  
+  #pocket2 {
+    top: -10px;
+    right: -10px;
+  }
+  
+  #pocket3 {
+    bottom: -10px;
+    left: -10px;
+  }
+  
+  #pocket4 {
+    bottom: -10px;
+    right: -10px;
+  }
+  
+  #striker {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+    bottom: 10px;
+    left: calc(50% - 15px);
+    cursor: pointer;
+  }
+  
+  #controls {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #8b5a2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6b4220;
+  }
+
+
+
+   /* Additional styles for coins and scoreboard */
+
+/* Scoreboard */
+#scoreboard {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  /* Coins */
+  .coin {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .black {
+    background-color: black;
+  }
+  
+  .white {
+    background-color: white;
+    border: 1px solid #000;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  

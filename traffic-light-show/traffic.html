@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Level 2</title>
+    <link rel="stylesheet" href="traffic.css">
+</head>
+<body>
+
+    <div class="trafficlight">
+
+        <div class="container">
+
+            <div id="maindiv">
+                
+                <div id="red" class="red">
+                </div>
+                
+                <div id="yellow" class="yellow"></div>
+                
+                <div id="green" class="green"></div>
+            </div>
+            
+            <p id="red-count"></p>
+        <!-- <div id="signal" class="signal" style="background-image: url('signal1.jpg');"> -->
+        </div>
+    
+    
+    <div class="counter-container">
+    
+        <div class="counter-div">
+            <h1>0</h1>
+        </div>
+    
+        <div class="img-div">
+            <img src="Stop.png">
+        </div>
+        </div>
+    </div>
+    
+
+<script>
+    var ptag = document.getElementById("red-count")
+    var redc = document.getElementById ("red");
+    var yellowc = document.getElementById ("yellow");
+    var greenc = document.getElementById ("green");
+    let img = document.getElementById("signal");
+
+    
+   
+    
+    let count = 1;
+    setTimeout(function red() {
+        var TimeInterval = setInterval(() => {
+            ptag.innerText = count;
+            count++
+        },1000)
+
+        redc.classList.add("darkred");
+        yellowc.classList.remove("darkyellow");
+        greenc.classList.remove("darkgreen");
+        clearInterval(TimeInterval)
+    }, 3000)
+    
+
+    count = 0;
+    setTimeout(function yellow() {
+        yellowc.classList.add("darkyellow");
+        greenc.classList.remove("darkgreen");
+        redc.classList.remove("darkred");
+        img.style.cssText = 'background-img: url(`signal{2}`)';
+    }, 6000)
+
+    
+    setTimeout(function green() {
+        greenc.classList.add("darkgreen");
+        yellowc.classList.remove("darkyellow");
+        redc.classList.remove("darkred");
+    
+    }, 9000)
+
+    setTimeout(function green() {
+        greenc.classList.remove("darkgreen");
+    }, 12000)
+   
+</script>
+</body>
+</html>

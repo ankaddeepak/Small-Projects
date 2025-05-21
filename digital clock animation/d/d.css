@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.clock {
+    font-size: 68px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 23px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(255, 0, 0, 0.5);
+}
+
+.date{
+    color: white;
+}
